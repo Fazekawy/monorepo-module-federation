@@ -1,0 +1,1 @@
+Monorepository + federation module webpack 
