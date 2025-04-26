@@ -1,0 +1,16 @@
+{
+  "name": "014-monorepo-resume",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+
+	"scripts": {
+		"start": "concurrently \"npm run start -w admin\" \"npm run start -w shop\" \"npm run start -w host\""
+	},
+
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
